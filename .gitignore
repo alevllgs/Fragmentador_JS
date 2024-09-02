@@ -1,0 +1,47 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Electron build output
+dist/
+build/
+release/
+*.log
+
+# Ignore artifacts produced by the build process
+my-shiny-app-win32-ia32/
+my-shiny-app-win32-x64/
+my-shiny-app-darwin-x64/
+my-shiny-app-linux-*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# R-specific files
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Cache
+$env:LOCALAPPDATA\Electron\Cache
+$env:APPDATA\Electron\Cache
+.cache/
+
+# IDE files
+.vscode/
+.idea/
+
+# Ignore executables
+*.exe
+*.csv
+*.dll
+*.so
+
+# Log files
+*.log
+*.log.*

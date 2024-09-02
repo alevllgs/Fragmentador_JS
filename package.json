@@ -1,0 +1,42 @@
+{
+  "name": "my-shiny-app",
+  "version": "1.0.0",
+  "description": "A Shiny application packaged with Electron",
+  "author": "Tu Nombre",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.tuempresa.myshinyapp",
+    "productName": "My Shiny App",
+    "files": [
+      "main.js",
+      "package.json",
+      "src/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "path/to/icon.ico",
+      "sign": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3"
+  }
+}
+
+
