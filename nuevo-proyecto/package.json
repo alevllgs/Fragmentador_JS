@@ -25,8 +25,7 @@
           ]
         }
       ],
-      "icon": "path/to/icon.ico",
-      "sign": false
+      "icon": "path/to/icon.ico"
     },
     "nsis": {
       "oneClick": false,
@@ -38,5 +37,6 @@
     "electron-builder": "^24.13.3"
   }
 }
+
 
 
